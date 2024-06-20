@@ -1,6 +1,6 @@
 # IMDB Machine Learning Project
 ### Challenge:
-This project aims to build a machine learning model that can be used to accurately predict the ***No_of_votes *** of the movies in the dataset.
+This project aims to build a machine learning model that can be used to accurately predict the `No_of_votes` of the movies in the dataset.
 
 ### Data Source:
 The data for this project can be found at [kaggle.com](https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows/data).
