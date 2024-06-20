@@ -52,7 +52,7 @@ The data is collated into one dataset with 1000 rows and 16 columns. The columns
 **Step 16:** Trained AdaBoostRegressor with DecisionTreeRegressor base estimator (max depth=20) and 100 estimators, evaluated the performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
 **Step 17:** Performed grid search using AdaBoostRegressor with DecisionTreeRegressor base estimator to optimize hyperparameters, evaluated the performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
 **Step 18:** Trained GradientBoostingRegressor with max depth of 20 and 100 estimators on normalized training data, evaluated the performance on test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
-**Step 19:** Performed grid search using GradientBoostingRegressor to optimize hyperparameters, evaluated the performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
+**Step 19:** Performed grid search using GradientBoostingRegressor to optimize hyperparameters, evaluated the performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.
 
 ### After testing every model we came to a conclusion that GradientBoostingRegressor model gives the highest R-squared value of 0.83 compared to all other models.
 
@@ -71,3 +71,9 @@ The data is collated into one dataset with 1000 rows and 16 columns. The columns
 |  9 | KNeighborsRegressor       | False     | 184238.79           | 266084.68          | 0.49     |
 
 This table summarizes the model performances, indicating the optimized status, mean absolute error, mean squared error, and R-squared score for each model.
+
+### Notebooks:
+
+* [Main Cleaning](main_cleaning.ipynb) has the code related to cleaning and grouping
+* [Initial ML](initial-ML.ipynb) has the code related to all the above mentioned models
+* [Main Notebook](main_notebook.ipynb) has the code related to just the highest score model i.e., `GradientBoostingRegressor`
