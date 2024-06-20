@@ -40,21 +40,21 @@ The data is collated into one dataset with 1000 rows and 16 columns. The columns
 **Step 4:** The graphs were plotted to visually analyze and interpret the distribution and trends of various columns in the dataset, enabling better understanding and insights into the data.\
 **Step 5:** Drop columns which had low correlation.\
 **Step 6:** Begin experimenting with various machine learning methods from the `sklearn` library after defining `target` and `features` where `target` is the `no_of_votes` column\
-**Step 7:** Now we perform the division between Train and Test, by reserving 20% of our data to Test. We used `train_test_split` for this.
+**Step 7:** Now we perform the division between Train and Test, by reserving 20% of our data to Test. We used `train_test_split` for this.\
 **Step 8:** Use One hot encoding (OHE) machine learning technique to encode categorical data to numerical ones.\
 **Step 9:** Now we Transformed features by scaling each feature to a given range using `MinMaxScaler`\
-**Step 10:** Used KNeighborsRegressor model with k=13 on normalized training data, to evaluate its performance on test data using R-squared, and record the model's error metrics.\
-**Step 11:** Trained LinearRegression model on normalized training data, to evaluate its performance on test data using Mean Absolute Error (MAE), RMSE, and R-squared, and record the model's error metrics.\
-**Step 12:** Trained BaggingRegressor with DecisionTreeRegressor base estimator (max depth=20), 50 estimators, and variable max_samples, evaluated the performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
-**Step 13:** Performed grid search using BaggingRegressor with DecisionTreeRegressor base estimator to optimize hyperparameters, evaluated the performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
-**Step 14:** Trained RandomForestRegressor with 100 estimators and max depth of 20 on normalized training data, evaluated the performance on test data using MAE, RMSE, and R-squared, and records the model's error metrics.\
-**Step 15:** Performed grid search using RandomForestRegressor to optimize hyperparameters, evaluates its performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
-**Step 16:** Trained AdaBoostRegressor with DecisionTreeRegressor base estimator (max depth=20) and 100 estimators, evaluated the performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
-**Step 17:** Performed grid search using AdaBoostRegressor with DecisionTreeRegressor base estimator to optimize hyperparameters, evaluated the performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
-**Step 18:** Trained GradientBoostingRegressor with max depth of 20 and 100 estimators on normalized training data, evaluated the performance on test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
-**Step 19:** Performed grid search using GradientBoostingRegressor to optimize hyperparameters, evaluated the performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.
+**Step 10:** Used `KNeighborsRegressor` model with k=13 on normalized training data, to evaluate its performance on test data using R-squared, and record the model's error metrics.\
+**Step 11:** Trained `LinearRegression` model on normalized training data, to evaluate its performance on test data using Mean Absolute Error (MAE), RMSE, and R-squared, and record the model's error metrics.\
+**Step 12:** Trained `BaggingRegressor` with `DecisionTreeRegressor` base estimator (max depth=20), 50 estimators, and variable max_samples, evaluated the performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
+**Step 13:** Performed grid search using `BaggingRegressor` with `DecisionTreeRegressor` base estimator to optimize hyperparameters, evaluated the performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
+**Step 14:** Trained `RandomForestRegressor` with 100 estimators and max depth of 20 on normalized training data, evaluated the performance on test data using MAE, RMSE, and R-squared, and records the model's error metrics.\
+**Step 15:** Performed grid search using `RandomForestRegressor` to optimize hyperparameters, evaluates its performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
+**Step 16:** Trained `AdaBoostRegressor` with `DecisionTreeRegressor` base estimator (max depth=20) and 100 estimators, evaluated the performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
+**Step 17:** Performed grid search using `AdaBoostRegressor` with `DecisionTreeRegressor` base estimator to optimize hyperparameters, evaluated the performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
+**Step 18:** Trained `GradientBoostingRegressor` with max depth of 20 and 100 estimators on normalized training data, evaluated the performance on test data using MAE, RMSE, and R-squared, and record the model's error metrics.\
+**Step 19:** Performed grid search using `GradientBoostingRegressor` to optimize hyperparameters, evaluated the performance on normalized test data using MAE, RMSE, and R-squared, and record the model's error metrics.
 
-### After testing every model we came to a conclusion that GradientBoostingRegressor model gives the highest R-squared value of 0.83 compared to all other models.
+### After testing every model we came to a conclusion that `GradientBoostingRegressor` model gives the highest R-squared value of 0.83 compared to all other models.
 
 
 |    | model                      | optimized | mean_absolute_error | mean_squared_error | r2_score |
